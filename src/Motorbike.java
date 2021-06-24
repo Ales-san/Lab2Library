@@ -3,7 +3,7 @@ public class Motorbike extends Vehicle {
     private static final int requiredAge = 18;
     private static final String type = "Motorbike";
 
-    public Motorbike(String name, String number, String owner) {
+    public Motorbike(String name, String number, String owner) throws VehicleException {
         super(name, number, owner);
     }
 

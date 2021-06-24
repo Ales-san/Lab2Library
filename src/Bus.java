@@ -1,9 +1,9 @@
-public class Truck extends Vehicle {
-    private static final char requiredCategory = 'C';
-    private static final int requiredAge = 18;
-    private static final String type = "Truck";
+public class Bus extends Vehicle{
+    private static final char requiredCategory = 'D';
+    private static final int requiredAge = 21;
+    private static final String type = "Bus";
 
-    public Truck(String name, String number, String owner) throws VehicleException {
+    public Bus(String name, String number, String owner) throws VehicleException {
         super(name, number, owner);
     }
 
@@ -21,4 +21,5 @@ public class Truck extends Vehicle {
     public String getVehicleType() {
         return type;
     }
+
 }
