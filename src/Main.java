@@ -10,6 +10,7 @@ public class Main {
             db.add(new Truck("QWE", "T983PA", "Jane Simmons"));
             db.add(new Bus("PAS", "M521EH", "Dora Jakob"));
             db.add(new Moped("DFG", "O822HE", "Jerald Black"));
+            db.add(new Tram("GTI", "K842YE", "John Doe"));
 
             for (Vehicle v : db) {
                 System.out.println(v.getVehicleType() + " " + v.getName() + " "
