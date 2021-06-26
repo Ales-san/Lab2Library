@@ -10,6 +10,7 @@ public class Main {
             db.add(new Truck("QWE", "T983PA", "Jane Simmons"));
             db.add(new Bus("PAS", "M521EH", "Dora Jakob"));
             db.add(new Moped("DFG", "O822HE", "Jerald Black"));
+            db.add(new Tram("GTI", "K842YE", "John Doe"));
 
             for (Vehicle v : db) {
                 System.out.println(v.getVehicleType() + " " + v.getName() + " "
@@ -28,7 +29,7 @@ public class Main {
                     number += (char) ('0' + rand.nextInt(10));
                 }
                 number += String.valueOf((char)('A'+ rand.nextInt(26))) + String.valueOf((char)('A'+ rand.nextInt(26)));
-                Vehicle v = (new Car(String.valueOf(i), number, Integer.toHexString(i + 15000) + Integer.toOctalString(i + 15000)));
+                Vehicle v = (new Tram(String.valueOf(i), number, Integer.toHexString(i + 15000) + Integer.toOctalString(i + 15000)));
                 System.out.print("\n" + v.getVehicleType() + " " + v.getName() + " "
                         + v.getNumber() + " " + v.getOwner() + " "
                         + v.getRequiredAge() + " " + v.getRequiredCategory() + " Next: ");
