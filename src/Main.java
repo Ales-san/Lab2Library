@@ -29,7 +29,7 @@ public class Main {
                     number += (char) ('0' + rand.nextInt(10));
                 }
                 number += String.valueOf((char)('A'+ rand.nextInt(26))) + String.valueOf((char)('A'+ rand.nextInt(26)));
-                Vehicle v = (new Car(String.valueOf(i), number, Integer.toHexString(i + 15000) + Integer.toOctalString(i + 15000)));
+                Vehicle v = (new Tram(String.valueOf(i), number, Integer.toHexString(i + 15000) + Integer.toOctalString(i + 15000)));
                 System.out.print("\n" + v.getVehicleType() + " " + v.getName() + " "
                         + v.getNumber() + " " + v.getOwner() + " "
                         + v.getRequiredAge() + " " + v.getRequiredCategory() + " Next: ");
