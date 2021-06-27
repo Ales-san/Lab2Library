@@ -3,8 +3,8 @@ public class Tram extends Vehicle{
     private static final int requiredAge = 21;
     private static final String type = "Tram";
 
-    public Tram(String name, String number, String owner) throws VehicleException {
-        super(name, number, owner);
+    public Tram(String name, String number, int ownerId) throws VehicleException {
+        super(name, number, ownerId);
     }
 
     @Override
