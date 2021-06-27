@@ -1,10 +1,10 @@
 public abstract class Vehicle {
     protected String name;
     protected String number;
-    protected String owner;
+    protected int ownerId;
     protected String letterList = "ETYOPAHKXCBM";
 
-    protected Vehicle(String name, String number, String owner) throws VehicleException {
+    protected Vehicle(String name, String number, int id) throws VehicleException {
         if(number.length() != 6 &&
                 letterList.lastIndexOf(number.charAt(0)) == -1 ||
                 letterList.lastIndexOf(number.charAt(4)) == -1 ||
@@ -16,7 +16,7 @@ public abstract class Vehicle {
         }
         this.name = name;
         this.number = number;
-        this.owner = owner;
+        this.ownerId = id;
     }
 
     public String getName() {
@@ -27,8 +27,8 @@ public abstract class Vehicle {
         return number;
     }
 
-    public String getOwner() {
-        return owner;
+    public int getOwnerId() {
+        return ownerId;
     }
 
     public abstract char getRequiredCategory();

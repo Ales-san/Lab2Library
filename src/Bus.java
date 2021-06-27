@@ -3,8 +3,8 @@ public class Bus extends Vehicle{
     private static final int requiredAge = 21;
     private static final String type = "Bus";
 
-    public Bus(String name, String number, String owner) throws VehicleException {
-        super(name, number, owner);
+    public Bus(String name, String number, int ownerId) throws VehicleException {
+        super(name, number, ownerId);
     }
 
     @Override
